@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  margin-top: 20px;
+}
+
+.title {
+  font-family: var(--font-Macho);
+  font-size: var(--font-large);
+  font-style: italic;
+  position: relative;
+  top: 5px;
+}
+
+.praise {
+  font-size: var(--font-small);
+  border: 1px solid black;
+  padding: 10px;
+  background-color: var(--color-transparent-white);
+  line-height: 1.8;
+  line-break: anywhere;
+  text-align: justify;
+}
