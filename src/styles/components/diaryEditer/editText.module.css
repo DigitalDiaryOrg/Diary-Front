@@ -1,0 +1,17 @@
+.textarea {
+  border: none;
+  resize: none;
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+
+  font-family: var(--font-HanSans);
+  font-size: var(--font-small);
+  background-color: var(--color-transparent-white);
+
+  line-height: 1.8;
+  text-align: justify;
+  line-break: anywhere;
+  box-sizing: border-box;
+  overflow: hidden;
+}
