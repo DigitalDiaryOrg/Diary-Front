@@ -7,6 +7,7 @@ import DiaryEmotion from "./diaryEmotion";
 import DiaryPraise from "./diaryPraise";
 
 import { useEffect, useState } from "react";
+import DiaryMusic from "./diaryMusic";
 
 export default function DiaryViewer({ date }) {
   const [data, setData] = useState(null);
@@ -22,6 +23,9 @@ export default function DiaryViewer({ date }) {
         <DiaryDate date={date} />
         {data ? (
           <>
+            {data.musicId && (
+              <DiaryMusic musicId={data.musicId} musicTitle={data.musicTitle} />
+            )}
             {data.content && <DiaryText text={data.content} />}
             {data.emotion && data.emotion.length > 0 && (
               <DiaryEmotion emotions={data.emotion} />

@@ -2,13 +2,14 @@
 
 import styles from "../../../../styles/app/diaryEdit.module.css";
 import header from "../../../../styles/app/header.module.css";
-import { IoMdClose, IoMdCheckmark } from "react-icons/io";
 
 import EditText from "../../../../components/diaryEditer/editText";
 import EditEmotion from "../../../../components/diaryEditer/editEmotion";
 
+import { IoMdClose, IoMdCheckmark } from "react-icons/io";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import EditMusic from "../../../../components/diaryEditer/editMusic";
 
 interface DateParms {
   params: { id: string };
@@ -17,6 +18,9 @@ interface DateParms {
 export default function DiaryEdit({ params: { id } }: DateParms) {
   const router = useRouter();
 
+  const [musicLink, setMusicLink] = useState("");
+  const [musicId, setMusicId] = useState("");
+  const [musicTitle, setMusicTitle] = useState("");
   const [content, setContent] = useState("");
   const [emotion, setEmotion] = useState([]);
   const [praise, setPraise] = useState("");
@@ -26,6 +30,9 @@ export default function DiaryEdit({ params: { id } }: DateParms) {
     const data = getData ? JSON.parse(getData) : null;
 
     if (data) {
+      setMusicLink(data.musicLink || "");
+      setMusicId(data.musicId || "");
+      setMusicTitle(data.musicTitle || "");
       setContent(data.content || "");
       setEmotion(data.emotion || []);
       setPraise(data.praise || "");
@@ -39,6 +46,9 @@ export default function DiaryEdit({ params: { id } }: DateParms) {
   const editComplete = () => {
     const newData = {
       date: id,
+      musicLink: musicLink,
+      musicId: musicId,
+      musicTitle: musicTitle,
       content: content,
       emotion: emotion,
       praise: praise,
@@ -56,6 +66,14 @@ export default function DiaryEdit({ params: { id } }: DateParms) {
       </div>
 
       <div className={styles.container}>
+        <EditMusic
+          musicLink={musicLink}
+          setMusicLink={setMusicLink}
+          musicId={musicId}
+          setMusicId={setMusicId}
+          musicTitle={musicTitle}
+          setMusicTitle={setMusicTitle}
+        />
         <EditText
           title={"CONTENT"}
           content={content}
