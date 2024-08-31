@@ -22,3 +22,10 @@
   font-family: var(--font-Hakgyoansim);
   font-style: italic;
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-large);
+  margin: 0 8%;
+}
