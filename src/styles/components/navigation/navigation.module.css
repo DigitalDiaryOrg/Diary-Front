@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-medium);
+  color: black;
+  padding: 20px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}

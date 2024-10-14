@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .emotion {
+  width: 50px;
+}
+
+.date {
+  font-size: var(--font-x-large);
+  font-family: var(--font-Hakgyoansim);
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.btn {
+  padding-left: 5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

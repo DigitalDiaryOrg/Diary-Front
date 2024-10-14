@@ -1,0 +1,12 @@
+.container {
+  position: relative;
+  margin-top: 30px;
+}
+
+.title {
+  font-family: var(--font-Macho);
+  font-size: var(--font-large);
+  font-style: italic;
+  position: relative;
+  top: 5px;
+}

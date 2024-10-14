@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  padding: 7% 8% 10% 8%;
+  margin: 25px auto;
+  gap: 20px;
+  border: 1px solid black;
+
+  background-color: var(--color-transparent-white);
+}

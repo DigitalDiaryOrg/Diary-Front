@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.icon {
+  font-size: var(--font-large);
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  content-visibility: hidden;
+}
+
+.title {
+  font-size: var(--font-x-large);
+  font-family: var(--font-Hakgyoansim);
+  font-style: italic;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-large);
+  margin: 0 8%;
+}

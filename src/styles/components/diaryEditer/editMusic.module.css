@@ -1,0 +1,43 @@
+.textarea {
+  resize: none;
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  height: 62px;
+
+  font-family: var(--font-HanSans);
+  font-size: var(--font-small);
+  background-color: var(--color-transparent-white);
+
+  line-height: 1.8;
+  text-align: justify;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.editTitle {
+  resize: none;
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  height: 62px;
+
+  font-family: var(--font-HanSans);
+  font-size: var(--font-small);
+  background-color: var(--color-transparent-white);
+
+  line-height: 1.8;
+  text-align: justify;
+  box-sizing: border-box;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.title2 {
+  font-family: var(--font-Macho);
+  font-size: var(--font-medium);
+  font-style: italic;
+  position: relative;
+  top: 4px;
+}

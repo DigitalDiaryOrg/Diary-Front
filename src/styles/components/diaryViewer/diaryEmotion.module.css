@@ -1,0 +1,21 @@
+.title {
+  font-size: var(--font-large);
+  font-family: var(--font-Macho);
+}
+
+.emotionbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.emotion {
+  position: relative;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: var(--font-x-small);
+  font-family: var(--font-Macho);
+  font-style: italic;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 5px 12px 5px 10px;
+}

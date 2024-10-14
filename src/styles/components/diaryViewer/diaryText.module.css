@@ -1,0 +1,6 @@
+.display {
+  line-height: 1.8;
+  line-break: anywhere;
+  text-align: justify;
+  font-size: var(--font-small);
+}

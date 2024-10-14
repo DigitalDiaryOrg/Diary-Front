@@ -1,0 +1,44 @@
+.selectMonth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  font-family: var(--font-Hakgyoansim);
+  font-size: var(--font-large);
+  height: 40px;
+  align-self: center;
+  gap: 20px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10%;
+  font-family: var(--font-Firenze);
+  font-style: italic;
+  font-size: var(--font-small);
+  border-top: 1px solid black;
+}
+
+.calendar div {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected {
+  width: 70%;
+  height: 70%;
+  justify-self: center;
+  font-family: var(--font-Macho);
+  font-size: var(--font-large);
+  border-radius: 100%;
+}

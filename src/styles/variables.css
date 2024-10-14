@@ -1,0 +1,57 @@
+:root {
+  --color-transparent-white: rgba(255, 255, 255, 0.308);
+
+  --mobile-width: 600px;
+
+  --font-x-large: 25px;
+  --font-large: 18px;
+  --font-medium: 16px;
+  --font-small: 13px;
+  --font-x-small: 11px;
+
+  --font-HanSans: "SpoqaHanSansNeo-Regular";
+  --font-Bombaram: "HSBombaram21-Regular";
+  --font-Hakgyoansim: "TTHakgyoansimMulgyeolB";
+  --font-Macho: "EF_MACHO";
+  --font-Firenze: "EF_Firenze";
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HSBombaram21-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTHakgyoansimMulgyeolB";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMulgyeolB.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EF_MACHO";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/EF_MACHO.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "EF_Firenze";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_Firenze.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
